@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金銭管理家計簿アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My家計簿</h1>
+
+    <!-- 残金表示 -->
+    <h2>現在の残金: <span id="balance">0</span> 円</h2>
+
+    <!-- 残金設定 -->
+    <div>
+        <h3>初期残金設定</h3>
+        <input type="number" id="initialBalanceInput" placeholder="金額を入力">
+        <button id="setBalanceBtn">設定</button>
+    </div>
+
+    <!-- 支出登録 -->
+    <div>
+        <h3>支出登録</h3>
+        <input type="number" id="expenseAmount" placeholder="金額">
+        <input type="text" id="expenseCategory" placeholder="カテゴリ">
+        <button id="addExpenseBtn">登録</button>
+    </div>
+
+    <!-- カテゴリ追加 -->
+    <div>
+        <h3>カテゴリ追加</h3>
+        <input type="text" id="newCategory" placeholder="新しいカテゴリ名">
+        <button id="addCategoryBtn">追加</button>
+    </div>
+
+    <!-- カテゴリごとの支出 -->
+     <div>
+        <h3>カテゴリごとの支出</h3>
+        <ul id="categoryTotals"></ul>
+     </div>   
+
+    <!-- 履歴表示 -->
+    <div>
+        <h3>履歴</h3>
+        <button id="showHistoryBtn">履歴を見る</button>
+        <ul id="historyList"></ul>
+    </div>
+
+    <!-- 全データリセット -->
+    <div>
+        <h3>データリセット</h3>
+        <button id="resetDataBtn">全データリセット</button>
+    </div>
+
+
+
+    <!-- Firebase App (必須) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+
+<!-- Firestore -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyAYzx0TP1e-4UPu7qVej7aSpTLRAYCk2pY",
+  authDomain: "kakeibo-43fb3.firebaseapp.com",
+  projectId: "kakeibo-43fb3",
+  storageBucket: "kakeibo-43fb3.appspot.com",   
+  messagingSenderId: "55608623375",
+  appId: "1:55608623375:web:de26da344342f99956fe7a",
+  measurementId: "G-1PTRED9Y5Z"
+};
+
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
