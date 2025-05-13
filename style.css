@@ -1,0 +1,75 @@
+/* 全体のベース設定 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+/* タイトル */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* 各セクション */
+div {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* 入力欄 */
+input[type="number"], input[type="text"] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ボタン */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 履歴リスト */
+#historyList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#historyList li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 残金表示 */
+h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+/* レスポンシブ対応（スマホでも快適） */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
