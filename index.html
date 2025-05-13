@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>My家計簿</title>
-=======
     <title>金銭管理家計簿アプリ</title>
->>>>>>> 4865a91240686ea37d3c5b63ce0ab11b7403c0e4
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>My家計簿</h1>
 
-<<<<<<< HEAD
     <!-- ログイン・ログアウト -->
     <div>
         <button id="loginBtn">ログイン</button>
@@ -24,12 +20,6 @@
     <h2>現在の残金: <span id="balance">0</span> 円</h2>
 
     <!-- 初期残金設定 -->
-=======
-    <!-- 残金表示 -->
-    <h2>現在の残金: <span id="balance">0</span> 円</h2>
-
-    <!-- 残金設定 -->
->>>>>>> 4865a91240686ea37d3c5b63ce0ab11b7403c0e4
     <div>
         <h3>初期残金設定</h3>
         <input type="number" id="initialBalanceInput" placeholder="金額を入力">
@@ -52,17 +42,10 @@
     </div>
 
     <!-- カテゴリごとの支出 -->
-<<<<<<< HEAD
     <div>
         <h3>カテゴリごとの支出</h3>
         <ul id="categoryTotals"></ul>
     </div>   
-=======
-     <div>
-        <h3>カテゴリごとの支出</h3>
-        <ul id="categoryTotals"></ul>
-     </div>   
->>>>>>> 4865a91240686ea37d3c5b63ce0ab11b7403c0e4
 
     <!-- 履歴表示 -->
     <div>
@@ -77,7 +60,6 @@
         <button id="resetDataBtn">全データリセット</button>
     </div>
 
-<<<<<<< HEAD
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
@@ -85,48 +67,18 @@
 
     <!-- Firebase初期化 -->
     <script>
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-    apiKey: "AIzaSyAYzx0TP1e-4UPu7qVej7aSpTLRAYCk2pY",
-    authDomain: "kakeibo-43fb3.firebaseapp.com",
-    projectId: "kakeibo-43fb3",
-    storageBucket: "kakeibo-43fb3.firebasestorage.app",
-    messagingSenderId: "55608623375",
-    appId: "1:55608623375:web:de26da344342f99956fe7a",
-    measurementId: "G-1PTRED9Y5Z"
-    };
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT_ID.appspot.com",
+            messagingSenderId: "YOUR_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
         firebase.initializeApp(firebaseConfig);
     </script>
 
     <!-- メインスクリプト -->
     <script src="main.js"></script>
 </body>
-=======
-
-
-    <!-- Firebase App (必須) -->
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
-
-<!-- Firestore -->
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-
-<script>
-const firebaseConfig = {
-  apiKey: "AIzaSyAYzx0TP1e-4UPu7qVej7aSpTLRAYCk2pY",
-  authDomain: "kakeibo-43fb3.firebaseapp.com",
-  projectId: "kakeibo-43fb3",
-  storageBucket: "kakeibo-43fb3.appspot.com",   
-  messagingSenderId: "55608623375",
-  appId: "1:55608623375:web:de26da344342f99956fe7a",
-  measurementId: "G-1PTRED9Y5Z"
-};
-
-  firebase.initializeApp(firebaseConfig);
-</script>
-
-    <script src="main.js"></script>
-
-</body>
-
->>>>>>> 4865a91240686ea37d3c5b63ce0ab11b7403c0e4
 </html>
